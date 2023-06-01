@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="incio_index">
+        <div class="contenedor_logo">
+
+            <a href="../index.html">
+                <img class="logo" src="../imagenes/icono.webp" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="navegación">
+                <li><a href="./instrumentos.html">Instrumentos</a></li>
+                <li><a href="./marcas.html">Marcas</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+                <li><a href="./acerca_de_nosotros.html">Acerca de nosotros</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Comunicate con nosotros!</h1>
+<section class="contenedor_formulario">
+    <form class="form_soporte">
+
+
+
+        <!--nombre -->
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Juan" required>
+        </div>
+
+
+        <!--email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="gutierrezmanueljuan@outlook.com">
+        </div>
+
+        <!--Instrumento -->
+        <div>
+            <select name="instrumento">
+                <option value="guitarra">Guitarra</option>
+                <option value="violin">Violin</option>
+                <option value="bateria">Bateria</option>
+            </select>
+        </div>
+
+        <!--Sexo -->
+        <div>
+            <label for="id_masculino">masculino</label>
+            <input type="radio" name="sexo" id="id_masculino" value="masculino">
+            <label for="id_femenino">femenino</label>
+            <input type="radio" name="sexo" id="id_femenino" value="femenino">
+            <label for="id_otro">otro</label>
+            <input type="radio" name="sexo" id="id_otro" value="otro">
+        </div>
+        <div>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+
+        <div>
+            <input type="checkbox" name="terminos_y_condiciones" id="t_y_c">
+            <label for="t_y_c">acepto los termninos y condiciones</label>
+        </div>
+<div>
+        <input type="submit" value="Enviar ">
+    <input type="reset" value="Resetear formulario">
+</div>
+
+</form>
+</section>
+        
+    </main>
+
+    <footer>
+        <a href="https://balsamiq.cloud/sks8xxi/p8u5dn7" target="_blank" rel="noopener noreferrer">Ir a los
+            wireframes!</a>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
