@@ -2,7 +2,7 @@ h1 {
 
     text-align: center;
 
-    color: red;
+    color: map-get($paleta_de_colores, primario );
 
     font-size: 50px;
 
@@ -22,14 +22,14 @@ h2.impact {
 
 section h2 {
 
-    color: red
+    color: map-get($paleta_de_colores, primario );
 }
 
 
 
 .alto_y_ancho {
 
-    background-color: violet;
+    background-color: map-get($colores_compuestos, violeta);
 
     width: 400px;
 

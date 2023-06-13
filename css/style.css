@@ -5,8 +5,10 @@
   font-family: "Instrument Serif", serif;
   box-sizing: border-box;
 }
+
 body {
-  background-color: black color white;
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -100,7 +102,7 @@ div:not(.contenedor_logo) {
   border: solid 2px white;
   border-radius: 2rem;
   opacity: 0.5;
-  box-shadow: 5px 5px 6px rgb(254, 11, 11);
+  box-shadow: 5px 5px 6px red;
 }
 
 .galeria img:hover {

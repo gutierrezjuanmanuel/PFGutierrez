@@ -28,13 +28,13 @@
 
     margin: 5px;
 
-    border: solid 2px white;
+    border: solid 2px map-get($colores_extra, blanco);
 
     border-radius: 2rem;
 
     opacity: .5;
 
-    box-shadow: 5px 5px 6px rgb(254, 11, 11);
+    box-shadow: 5px 5px 6px map-get($paleta_de_colores , primario );
 
 }
 

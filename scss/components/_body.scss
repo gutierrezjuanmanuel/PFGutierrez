@@ -1,5 +1,6 @@
 body {
 
-    background-color: black color white;
+    background-color: map-get($paleta_de_colores, secundario);
+    color :map-get($colores_extra, blanco);
 
 }

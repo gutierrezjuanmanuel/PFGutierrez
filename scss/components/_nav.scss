@@ -52,7 +52,7 @@ ul.navegación li a {
 
     padding: 1rem;
 
-    background-color: pink;
+    background-color: map-get($colores_extra, rosa);
 
     border-radius: 50%;
 
@@ -70,7 +70,7 @@ ul.navegación li a {
 
 ul.navegación li a:hover {
 
-    background-color: rgb(254, 170, 184);
+    background-color: map-get($colores_extra, rosahover);
 
 
 
@@ -80,9 +80,9 @@ ul.navegación li a:hover {
 
 a:visited {
 
-    background-color: darkslategrey;
+    background-color: map-get($colores_darkslate, gris);
 
-    color: #999;
+    color: map-get($colores_rgb,segundo);
 
 
 
@@ -90,9 +90,9 @@ a:visited {
 
 a:link {
 
-    background-color: aqua;
+    background-color: map-get($colores_compuestos, acua);
 
-    color: darkslateblue;
+    color: map-get($colores_darkslate, azuloscuro);
 
 }
 
@@ -102,17 +102,17 @@ a:hover {
 
     padding: 20px;
 
-    background-color: rgb(10, 10, 60);
+    background-color: map-get($colores_rgb,primero);
 
-    color: azure;
+    color: map-get($colores_darkslate, blancoazure);
 
 }
 
 a:active {
 
-    background-color: yellow;
+    background-color: map-get($paleta_de_colores, terciario);
 
-    color: black;
+    color: map-get($paleta_de_colores, secundario);
 
 }
 
@@ -120,6 +120,6 @@ a:active {
 
 div:not(.contenedor_logo) {
 
-    border: solid red 5px;
+    border: solid map-get($paleta_de_colores, primario ) 5px;
 
 }
