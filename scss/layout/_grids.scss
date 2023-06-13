@@ -1,0 +1,55 @@
+.contenedor_grid {
+
+    display: grid;
+
+    grid-template-columns: 15vw 64vw 15vw;
+
+    grid-template-rows: 10vh 20vh 20vh 20vh 15vh 15vh;
+
+    grid-template-areas: "header  header   header "
+
+        "main    main     main "
+
+        "main    main     main "
+
+        "main    main     main "
+
+        "section section  section"
+
+        "footer  footer   footer";
+
+    column-gap: 3vw;
+
+    row-gap: 3vh;
+
+    justify-items: stretch;
+
+    align-items: stretch;
+
+
+
+}
+
+header {
+
+    grid-area: header;
+
+}
+
+main {
+
+    grid-area: main;
+
+}
+
+section {
+
+    grid-area: section;
+
+}
+
+footer {
+
+    grid-area: footer;
+
+}
