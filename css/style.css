@@ -116,7 +116,7 @@ div:not(.contenedor_logo) {
 
 footer {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   flex-direction: column;
   background-color: brown;
