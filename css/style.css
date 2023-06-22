@@ -199,9 +199,9 @@ main {
 }
 
 section {
-  grid-area: section;
+  grid-area: Section;
 }
 
 footer {
-  grid-area: footer;
+  grid-area: Footer;
 }/*# sourceMappingURL=style.css.map */
