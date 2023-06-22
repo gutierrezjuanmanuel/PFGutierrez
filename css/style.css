@@ -4,11 +4,13 @@
   padding: 0;
   font-family: "Instrument Serif", serif;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
 header {
@@ -183,10 +185,12 @@ section h2 {
   grid-template-columns: 15vw 64vw 15vw;
   grid-template-rows: 15vh 20vh 20vh 135vh 15vh 15vh;
   grid-template-areas: "header  header   header " "main    main     main " "main    main     main " "main    main     main " "section section  section" "footer  footer   footer";
+  -moz-column-gap: 3vw;
        column-gap: 3vw;
   row-gap: 3vh;
   justify-items: stretch;
   align-items: stretch;
+  overflow: hidden;
 }
 
 header {
