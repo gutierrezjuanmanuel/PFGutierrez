@@ -188,7 +188,6 @@ section h2 {
   row-gap: 3vh;
   justify-items: stretch;
   align-items: stretch;
-  overflow: hidden;
 }
 
 header {
