@@ -13,6 +13,10 @@ body {
   overflow: hidden;
 }
 
+div {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
