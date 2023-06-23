@@ -210,7 +210,7 @@ footer {
   display: grid;
   grid-template-columns: 15vw 64vw 15vw;
   grid-template-rows: 15vh 20vh 20vh 135vh 15vh 15vh;
-  grid-template-areas: "Header  Header   Header " "Acerca    Acerca     Acerca" "Texto    Texto     Texto " "Texto   Texto     Texto " "Texto Texto  Texto" "Footer  Footer   Footer";
+  grid-template-areas: "Header  Header   Header " "h1    h1     h1" "h2    h2     h2 " "h2   h2     h2 " "h2   h2      h2" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
   row-gap: 3vh;
