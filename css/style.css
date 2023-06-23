@@ -223,11 +223,11 @@ header {
 }
 
 h1 {
-  grid-area: Acerca;
+  grid-area: h1;
 }
 
 h2 {
-  grid-area: Texto;
+  grid-area: h2;
 }
 
 footer {
