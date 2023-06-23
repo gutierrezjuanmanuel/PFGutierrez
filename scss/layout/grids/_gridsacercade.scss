@@ -8,13 +8,13 @@
 
     grid-template-areas: "Header  Header   Header "
 
-        "Main    Main     Main "
+        "Acerca    Acerca     Acerca"
 
-        "Main    Main     Main "
+        "Texto    Texto     Texto "
 
-        "Main    Main     Main "
+        "Texto   Texto     Texto "
 
-        "Section Section  Section"
+        "Texto Texto  Texto"
 
         "Footer  Footer   Footer";
 
@@ -36,15 +36,15 @@ header {
 
 }
 
-main {
+h1 {
 
-    grid-area: Main;
+    grid-area: Acerca;
 
 }
 
-section {
+h2 {
 
-    grid-area: Section;
+    grid-area: Texto;
 
 }
 

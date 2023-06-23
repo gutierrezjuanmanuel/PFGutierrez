@@ -210,7 +210,7 @@ footer {
   display: grid;
   grid-template-columns: 15vw 64vw 15vw;
   grid-template-rows: 15vh 20vh 20vh 135vh 15vh 15vh;
-  grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
+  grid-template-areas: "Header  Header   Header " "Acerca    Acerca     Acerca" "Texto    Texto     Texto " "Texto   Texto     Texto " "Texto Texto  Texto" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
   row-gap: 3vh;
@@ -222,12 +222,12 @@ header {
   grid-area: Header;
 }
 
-main {
-  grid-area: Main;
+h1 {
+  grid-area: Acerca;
 }
 
-section {
-  grid-area: Section;
+h2 {
+  grid-area: Texto;
 }
 
 footer {
