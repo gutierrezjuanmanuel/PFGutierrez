@@ -212,7 +212,7 @@ footer {
 .acercade_grid {
   display: grid;
   grid-template-columns: 15vw 64vw 15vw;
-  grid-template-rows: 15vh 20vh 20vh 135vh 15vh 15vh;
+  grid-template-rows: 15vh 20vh 20vh 135vh 15vh 9vh;
   grid-template-areas: "Header  Header   Header " "h1    h1     h1" "h2    h2     h2 " "h2   h2      h2 " "h2   h2       h2" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
@@ -243,7 +243,7 @@ footer {
 .contactanos_grid {
   display: grid;
   grid-template-columns: 15vw 64vw 15vw;
-  grid-template-rows: 15vh 20vh 20vh 135vh 15vh 15vh;
+  grid-template-rows: 15vh 20vh 20vh 135vh 15vh 9vh;
   grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
@@ -274,7 +274,7 @@ footer {
 .instrumentos_grid {
   display: grid;
   grid-template-columns: 15vw 64vw 15vw;
-  grid-template-rows: 15vh 20vh 20vh 140vh 5vh 15vh;
+  grid-template-rows: 15vh 20vh 20vh 140vh 5vh 9vh;
   grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
