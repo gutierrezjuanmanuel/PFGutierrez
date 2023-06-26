@@ -264,8 +264,8 @@ footer {
 
 .instrumentos_grid {
   display: grid;
-  grid-template-columns: 15vw 64vw 100vw;
-  grid-template-rows: 15vh 20vh 20vh 100vh 5vh 15vh;
+  grid-template-columns: 15vw 64vw 15vw;
+  grid-template-rows: 15vh 20vh 20vh 140vh 5vh 15vh;
   grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
