@@ -273,7 +273,6 @@ footer {
   justify-items: stretch;
   align-items: stretch;
 }
-
 header {
   grid-area: Header;
 }
