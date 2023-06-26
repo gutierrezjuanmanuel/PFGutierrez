@@ -189,6 +189,9 @@ section h2 {
   justify-items: stretch;
   align-items: stretch;
 }
+.contenedor_grid .container {
+  width: auto;
+}
 
 header {
   grid-area: Header;
@@ -217,6 +220,9 @@ footer {
   justify-items: stretch;
   align-items: stretch;
 }
+.acercade_grid .container {
+  width: auto;
+}
 
 header {
   grid-area: Header;
@@ -244,6 +250,9 @@ footer {
   row-gap: 3vh;
   justify-items: stretch;
   align-items: stretch;
+}
+.contactanos_grid .container {
+  width: auto;
 }
 
 header {
@@ -303,6 +312,9 @@ footer {
   row-gap: 3vh;
   justify-items: stretch;
   align-items: stretch;
+}
+.marcas_grid .container {
+  width: auto;
 }
 
 header {
