@@ -273,6 +273,10 @@ footer {
   justify-items: stretch;
   align-items: stretch;
 }
+.instrumentos_grid .container {
+  width: auto;
+}
+
 header {
   grid-area: Header;
 }
