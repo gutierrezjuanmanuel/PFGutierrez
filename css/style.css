@@ -196,18 +196,22 @@ section h2 {
 
 header {
   grid-area: Header;
+  width: auto;
 }
 
 main {
   grid-area: Main;
+  width: auto;
 }
 
 section {
   grid-area: Section;
+  width: auto;
 }
 
 footer {
   grid-area: Footer;
+  width: auto;
 }
 
 .acercade_grid {
