@@ -58,25 +58,5 @@ footer {
 
     grid-area: Footer;
     width:auto;
-
 }
 
-@media (min-width: 320px){
-    .contenedor_grid{
-        grid-template-columns: auto ;
-
-    grid-template-rows: auto auto auto auto auto auto;
-
-        grid-template-areas: "Header  "
-
-        "Main     "
-
-        "Main     "
-
-        "Main   "
-
-        "Section "
-
-        "Footer ";
-    }
-}
