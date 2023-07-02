@@ -190,7 +190,7 @@ section h2 {
   align-items: stretch;
 }
 .contenedor_grid .container {
-  width: auto;
+  width: 100%;
 }
 
 header {
