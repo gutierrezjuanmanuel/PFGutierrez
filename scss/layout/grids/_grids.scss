@@ -2,21 +2,17 @@
 
     display: grid;
 
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
 
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
 
-    grid-template-areas: "Header  Header   Header "
+    grid-template-areas: "Header "
 
-        "Main    Main     Main "
+        "Main  "
 
-        "Main    Main     Main "
+        "Section "
 
-        "Main    Main     Main "
-
-        "Section Section  Section"
-
-        "Footer  Footer   Footer";
+        "Footer  ";
 
     column-gap: 3vw;
 
@@ -25,6 +21,8 @@
     justify-items: stretch;
 
     align-items: stretch;
+
+    width: 100%;
 
     .container {
         width: 100%;
