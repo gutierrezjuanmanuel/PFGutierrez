@@ -181,8 +181,8 @@ section h2 {
 
 .contenedor_grid {
   display: grid;
-  grid-template-columns: 15vw 64vw 15vw;
-  grid-template-rows: 15vh 20vh 20vh 20vh 15vh 10vh;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
