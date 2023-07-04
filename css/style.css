@@ -491,29 +491,39 @@ footer {
 @media screen and (min-width: 720px) {
   .marcas_grid {
     display: grid;
-    grid-template-columns: 150%;
-    grid-template-rows: 10vh auto 50vh 9vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh auto 95vh 9vh;
     grid-template-areas: "Header " "h1  " "ol " "Footer  ";
   }
   .marcas_grid header.container {
-    width: 150%;
+    width: auto;
   }
   .marcas_grid ul.navegación {
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: 90%;
   }
   .marcas_grid .contenedor_logo {
-    width: 150%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
   }
   .marcas_grid .centrar_texto1 {
-    font-size: 2rem;
+    font-size: 9rem;
+  }
+  .marcas_grid nav {
+    width: 50%;
   }
   .marcas_grid ol {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-content: stretch;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 2rem;
+    font-size: 4rem;
     width: auto;
   }
   div.marcas_grid {
