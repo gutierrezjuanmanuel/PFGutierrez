@@ -231,6 +231,9 @@ footer {
   .contenedor_grid .contenedor_logo {
     width: 240%;
   }
+  .contenedor_grid .centrar_texto {
+    font-size: 2rem;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor_grid {
