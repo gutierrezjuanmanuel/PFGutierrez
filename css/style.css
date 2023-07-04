@@ -500,7 +500,7 @@ footer {
   }
   .marcas_grid ul.navegación {
     justify-content: space-evenly;
-    width: 90%;
+    width: 110%;
   }
   .marcas_grid .contenedor_logo {
     display: flex;
@@ -527,6 +527,6 @@ footer {
     width: auto;
   }
   div.marcas_grid {
-    width: 150%;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
