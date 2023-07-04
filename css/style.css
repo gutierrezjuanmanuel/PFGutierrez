@@ -81,6 +81,8 @@ a:active {
 
 div:not(.contenedor_logo) {
   border: solid red 5px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .contenedor_logo {

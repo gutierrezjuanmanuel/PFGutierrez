@@ -123,5 +123,6 @@ a:active {
 div:not(.contenedor_logo) {
 
     border: solid map-get($paleta_de_colores, primario ) 5px;
+    width: fit-content;
 
 }
