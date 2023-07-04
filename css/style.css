@@ -387,6 +387,38 @@ footer {
     width: fit-content;
   }
 }
+@media screen and (min-width: 720px) {
+  .contactanos_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh auto 9vh;
+    grid-template-areas: "Header " "Main  " "Footer  ";
+  }
+  .contactanos_grid header.container {
+    width: auto;
+  }
+  .contactanos_grid ul.navegación {
+    justify-content: space-evenly;
+    width: 110%;
+  }
+  .contactanos_grid .contenedor_logo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .contactanos_grid nav {
+    width: 50%;
+  }
+  .contactanos_grid h1 {
+    font-size: 4rem;
+  }
+  div.contactanos_grid {
+    width: 100%;
+  }
+}
 .instrumentos_grid {
   display: grid;
   grid-template-columns: 15vw 64vw auto;
