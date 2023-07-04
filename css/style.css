@@ -225,13 +225,14 @@ footer {
     grid-template-areas: "Header " "Main  " "Section " "Footer  ";
   }
   .contenedor_grid header {
-    width: 90%;
+    width: 100%;
   }
   .contenedor_grid ul.navegacion {
     justify-content: flex-end;
   }
   .contenedor_grid .contenedor_logo {
-    width: 350%;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .contenedor_grid .centrar_texto {
     font-size: 2rem;

@@ -75,13 +75,13 @@ footer {
     
             "Footer  ";
             header {
-                width: 90%;
+                width: 100%;
             }
             ul.navegacion{
                 justify-content: flex-end;
             }
             .contenedor_logo{
-                width: 350%;
+                width: fit-content;
             }
             .centrar_texto{
                 font-size: 2rem;
@@ -95,6 +95,7 @@ footer {
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            
 }
 }
 
