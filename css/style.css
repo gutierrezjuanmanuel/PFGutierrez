@@ -228,8 +228,8 @@ footer {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .contenedor_grid ul.navegacion {
-    width: 100%;
+  .contenedor_grid ul.navegación {
+    justify-content: flex-end;
   }
   .contenedor_grid .contenedor_logo {
     width: -moz-fit-content;

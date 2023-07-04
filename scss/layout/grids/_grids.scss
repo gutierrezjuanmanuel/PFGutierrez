@@ -77,8 +77,9 @@ footer {
             header.container {
                 width:fit-content;
             }
-            ul.navegacion{
-                width: 100%;
+            ul.navegación{
+            
+                justify-content: flex-end;
             }
             .contenedor_logo{
                 width: fit-content;
