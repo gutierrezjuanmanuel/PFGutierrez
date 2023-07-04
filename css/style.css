@@ -240,6 +240,11 @@ footer {
     flex-direction: column;
     align-content: center;
   }
+  .contenedor_grid section.Entregamos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor_grid {
