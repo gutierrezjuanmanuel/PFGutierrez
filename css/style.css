@@ -222,6 +222,15 @@ footer {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "Header " "Main  " "Section " "Footer  ";
   }
+  .contenedor_grid header {
+    width: 90%;
+  }
+  .contenedor_grid ul.navegacion {
+    justify-content: flex-end;
+  }
+  .contenedor_grid .contenedor_logo {
+    width: 240%;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor_grid {
