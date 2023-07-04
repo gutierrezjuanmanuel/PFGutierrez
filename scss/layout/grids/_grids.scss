@@ -74,11 +74,11 @@ footer {
             "Section "
     
             "Footer  ";
-            header {
-                width: 100%;
+            header.container {
+                width:fit-content;
             }
             ul.navegacion{
-                justify-content:flex-end;
+                width: 100%;
             }
             .contenedor_logo{
                 width: fit-content;
@@ -95,7 +95,9 @@ footer {
                 flex-wrap: wrap;
                 justify-content: center;
             }
-            
+            div.contenedor_grid{
+                width: fit-content;
+            }
 }
 }
 

@@ -224,11 +224,12 @@ footer {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "Header " "Main  " "Section " "Footer  ";
   }
-  .contenedor_grid header {
-    width: 100%;
+  .contenedor_grid header.container {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .contenedor_grid ul.navegacion {
-    justify-content: flex-end;
+    width: 100%;
   }
   .contenedor_grid .contenedor_logo {
     width: -moz-fit-content;
@@ -245,6 +246,10 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .contenedor_grid div.contenedor_grid {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 @media screen and (min-width: 768px) {
