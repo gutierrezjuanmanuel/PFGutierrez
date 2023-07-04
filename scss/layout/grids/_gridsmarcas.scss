@@ -22,7 +22,7 @@
 
     align-items: stretch;
 
-    width:100%;
+    width: 100%;
 
     .container {
         width: auto;
@@ -35,27 +35,27 @@
 header {
 
     grid-area: Header;
-    width:auto;
+    width: auto;
 
 }
 
 h1 {
 
     grid-area: h1;
-    width:auto;
+    width: auto;
 
 }
 
 ol {
 
     grid-area: ol;
-    width:auto;
+    width: auto;
 }
 
 footer {
 
     grid-area: Footer;
-    width:auto;
+    width: auto;
 
 }
 
@@ -63,42 +63,99 @@ footer {
     .marcas_grid {
 
         display: grid;
-    
-        grid-template-columns: auto;
-    
-        grid-template-rows: auto auto auto auto;
-    
-        grid-template-areas: "Header "
-    
-            "h1  "
-    
-            "ol "
-    
-            "Footer  ";
-            header.container {
-                width:fit-content;
-            }
-            ul.navegación{
-            
-                justify-content: flex-end;
-            }
-            .contenedor_logo{
-                width: fit-content;
-            }
-            .centrar_texto1{
-                font-size: 2rem;
-            }
 
-            ol{
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                align-content: center;
-                justify-content: center;
-                font-size: 2rem;
-            }
-            div.marcas_grid{
-                width: fit-content;
-            }
+        grid-template-columns: fit-content;
+
+        grid-template-rows: auto auto auto auto;
+
+        grid-template-areas: "Header "
+
+            "h1  "
+
+            "ol "
+
+            "Footer  ";
+
+        header.container {
+            width: fit-content;
+        }
+
+        ul.navegación {
+
+            justify-content: flex-end;
+        }
+
+        .contenedor_logo {
+            width: fit-content;
+        }
+
+        .centrar_texto1 {
+            font-size: 2rem;
+        }
+
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        div.marcas_grid {
+            width: fit-content;
+        }
+    }
 }
+
+@media screen and (min-width: 720px) {
+    .marcas_grid {
+
+        display: grid;
+
+        grid-template-columns: 150%;
+
+        grid-template-rows: 10vh auto 50vh 9vh;
+
+        grid-template-areas: "Header "
+
+            "h1  "
+
+            "ol "
+
+            "Footer  ";
+
+        header.container {
+            width: 150%;
+        }
+
+        ul.navegación {
+
+            justify-content: flex-end;
+        }
+
+        .contenedor_logo {
+            width: 150%;
+        }
+
+        .centrar_texto1 {
+            font-size: 2rem;
+        }
+
+
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: stretch;
+            align-items: center;
+            font-size: 2rem;
+            width: auto;
+        }
+
+    }
+
+    div.marcas_grid {
+        width: 150%;
+    }
 }

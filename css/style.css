@@ -457,7 +457,7 @@ footer {
 @media screen and (min-width: 320px) {
   .marcas_grid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: fit-content;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "Header " "h1  " "ol " "Footer  ";
   }
@@ -486,5 +486,37 @@ footer {
   .marcas_grid div.marcas_grid {
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+@media screen and (min-width: 720px) {
+  .marcas_grid {
+    display: grid;
+    grid-template-columns: 150%;
+    grid-template-rows: 10vh auto 50vh 9vh;
+    grid-template-areas: "Header " "h1  " "ol " "Footer  ";
+  }
+  .marcas_grid header.container {
+    width: 150%;
+  }
+  .marcas_grid ul.navegación {
+    justify-content: flex-end;
+  }
+  .marcas_grid .contenedor_logo {
+    width: 150%;
+  }
+  .marcas_grid .centrar_texto1 {
+    font-size: 2rem;
+  }
+  .marcas_grid ol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+    font-size: 2rem;
+    width: auto;
+  }
+  div.marcas_grid {
+    width: 150%;
   }
 }/*# sourceMappingURL=style.css.map */
