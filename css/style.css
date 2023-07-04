@@ -323,7 +323,7 @@ footer {
     width: fit-content;
   }
   .acercade_grid h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .acercade_grid div.acercade_grid {
     width: -moz-fit-content;
@@ -332,14 +332,15 @@ footer {
 }
 .contactanos_grid {
   display: grid;
-  grid-template-columns: 15vw 64vw auto;
-  grid-template-rows: 15vh 20vh 20vh 135vh 15vh 9vh;
-  grid-template-areas: "Header  Header   Header " "Main    Main     Main " "Main    Main     Main " "Main    Main     Main " "Section Section  Section" "Footer  Footer   Footer";
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "Header" "Main" "Footer ";
   -moz-column-gap: 3vw;
        column-gap: 3vw;
   row-gap: 3vh;
   justify-items: stretch;
   align-items: stretch;
+  width: 100%;
 }
 .contactanos_grid .container {
   width: auto;
@@ -347,20 +348,45 @@ footer {
 
 header {
   grid-area: Header;
+  width: auto;
 }
 
 main {
   grid-area: Main;
-}
-
-section {
-  grid-area: Section;
+  width: auto;
 }
 
 footer {
   grid-area: Footer;
+  width: auto;
 }
 
+@media screen and (min-width: 320px) {
+  .contactanos_grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Header " "Main  " "Footer  ";
+  }
+  .contactanos_grid header.container {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contactanos_grid ul.navegación {
+    justify-content: flex-end;
+  }
+  .contactanos_grid .contenedor_logo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contactanos_grid h1 {
+    font-size: 1rem;
+  }
+  .contactanos_grid div.contactanos_grid {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 .instrumentos_grid {
   display: grid;
   grid-template-columns: 15vw 64vw auto;
