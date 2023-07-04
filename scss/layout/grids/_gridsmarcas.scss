@@ -77,12 +77,13 @@ footer {
             "Footer  ";
 
         header.container {
-            width: fit-content;
+            width: auto;
         }
 
         ul.navegación {
 
-            justify-content: flex-end;
+            justify-content: space-evenly;
+            width:110%;
         }
 
         .contenedor_logo {

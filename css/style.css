@@ -462,11 +462,11 @@ footer {
     grid-template-areas: "Header " "h1  " "ol " "Footer  ";
   }
   .marcas_grid header.container {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
   }
   .marcas_grid ul.navegación {
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    width: 110%;
   }
   .marcas_grid .contenedor_logo {
     width: -moz-fit-content;
