@@ -330,6 +330,41 @@ footer {
     width: fit-content;
   }
 }
+@media screen and (min-width: 720px) {
+  .acercade_grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh auto 55vh 9vh;
+    grid-template-areas: "Header " "h1  " "h2" "Footer  ";
+  }
+  .acercade_grid header.container {
+    width: auto;
+  }
+  .acercade_grid ul.navegación {
+    justify-content: space-evenly;
+    width: 110%;
+  }
+  .acercade_grid .contenedor_logo {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+  }
+  .acercade_grid nav {
+    width: 50%;
+  }
+  .acercade_grid h1 {
+    font-size: 4rem;
+  }
+  .acercade_grid h2 {
+    font-size: 3rem;
+  }
+  div.acercade_grid {
+    width: 100%;
+  }
+}
 .contactanos_grid {
   display: grid;
   grid-template-columns: auto;
