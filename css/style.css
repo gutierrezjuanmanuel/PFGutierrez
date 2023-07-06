@@ -655,8 +655,7 @@ footer {
     font-size: 2rem;
   }
   .marcas_grid div.marcas_grid {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
 }
 @media screen and (min-width: 720px) {
@@ -667,8 +666,7 @@ footer {
     grid-template-areas: "Header " "h1  " "ol " "Footer ";
   }
   .marcas_grid header.container {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: auto;
   }
   .marcas_grid ul.navegación {
     justify-content: flex-end;
@@ -690,10 +688,6 @@ footer {
     font-size: 2rem;
   }
   .marcas_grid div.marcas_grid {
-    width: fit-body;
-  }
-  .marcas_grid .contenedor_logo {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

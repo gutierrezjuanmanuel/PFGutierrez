@@ -99,7 +99,7 @@ footer {
                 font-size: 2rem;
             }
             div.marcas_grid{
-                width: fit-content;
+                width: 100%;
             }
 }
 }
@@ -122,7 +122,7 @@ footer {
         "Footer ";
 
         header.container {
-            width:fit-content;
+            width:auto;
         }
         ul.navegación{
         
@@ -146,12 +146,9 @@ footer {
         }
 
         div.marcas_grid{
-            width: fit-body;
+            width: 100%;
 
         }
 
-        .contenedor_logo{
-            width: fit-content;
-        }
     }
 }
