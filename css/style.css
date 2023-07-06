@@ -450,6 +450,31 @@ footer {
     width: fit-content;
   }
 }
+@media screen and (min-width: 572px) {
+  .contactanos_grid {
+    display: grid;
+    grid-template-columns: 719px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "Header " "Main  " "Footer  ";
+  }
+  .contactanos_grid header.container {
+    width: 100%;
+  }
+  .contactanos_grid ul.navegación {
+    justify-content: flex-end;
+  }
+  .contactanos_grid .contenedor_logo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contactanos_grid h1 {
+    font-size: 4rem;
+  }
+  .contactanos_grid div.contactanos_grid {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
 @media screen and (min-width: 720px) {
   .contactanos_grid {
     display: grid;
