@@ -56,6 +56,10 @@ footer {
     grid-area: Footer;
     width:auto;
 
+    div:not(.contenedor_logo) {
+        width:auto;
+    }
+
 }
 
 @media screen and (min-width: 320px) {
@@ -148,5 +152,6 @@ footer {
             width: 100%;
 
         }
+
 
     }}

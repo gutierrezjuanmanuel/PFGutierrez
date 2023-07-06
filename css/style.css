@@ -122,6 +122,10 @@ div:not(.contenedor_logo) {
   width: 1200px;
 }
 
+ol {
+  list-style-type: none;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -623,6 +627,9 @@ ol {
 
 footer {
   grid-area: Footer;
+  width: auto;
+}
+footer div:not(.contenedor_logo) {
   width: auto;
 }
 
