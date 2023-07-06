@@ -555,6 +555,40 @@ footer {
 @media screen and (min-width: 625px) {
   .instrumentos_grid {
     display: grid;
+    grid-template-columns: 670px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "Header " "Main  " "Section " "Footer  ";
+  }
+  .instrumentos_grid header.container {
+    width: 100%;
+  }
+  .instrumentos_grid ul.navegación {
+    justify-content: flex-end;
+  }
+  .instrumentos_grid .contenedor_logo {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .instrumentos_grid .centrar_texto2 {
+    font-size: 2rem;
+  }
+  .instrumentos_grid .galeria {
+    flex-direction: column;
+    align-content: center;
+  }
+  .instrumentos_grid section.losmejores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .instrumentos_grid div.instrumentos_grid {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media screen and (min-width: 671px) {
+  .instrumentos_grid {
+    display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10vh auto auto 9vh;
     grid-template-areas: "Header " "Main " "Section" "Footer  ";

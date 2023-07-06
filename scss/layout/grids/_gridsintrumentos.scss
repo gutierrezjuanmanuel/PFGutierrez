@@ -106,6 +106,50 @@ footer {
     .instrumentos_grid {
 
         display: grid;
+    
+        grid-template-columns: 670px;
+    
+        grid-template-rows: auto auto auto auto;
+    
+        grid-template-areas: "Header "
+    
+            "Main  "
+    
+            "Section "
+    
+            "Footer  ";
+            header.container {
+                width:100%;
+            }
+            ul.navegación{
+            
+                justify-content: flex-end;
+            }
+            .contenedor_logo{
+                width: fit-content;
+            }
+            .centrar_texto2{
+                font-size: 2rem;
+            }
+            .galeria{
+                flex-direction: column;
+                align-content: center;
+            }
+            section.losmejores{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            div.instrumentos_grid{
+                width: fit-content;
+            }
+}
+}
+
+@media screen and (min-width: 671px) {
+    .instrumentos_grid {
+
+        display: grid;
 
         grid-template-columns: 100%;
 
