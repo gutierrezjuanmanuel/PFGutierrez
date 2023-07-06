@@ -609,6 +609,9 @@ footer {
 .marcas_grid .container {
   width: auto;
 }
+.marcas_grid div:not(.contenedor_logo) {
+  width: auto;
+}
 
 header {
   grid-area: Header;
@@ -627,9 +630,6 @@ ol {
 
 footer {
   grid-area: Footer;
-  width: auto;
-}
-footer div:not(.contenedor_logo) {
   width: auto;
 }
 
@@ -670,11 +670,11 @@ footer div:not(.contenedor_logo) {
   .marcas_grid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25vh 25vh 25vh 25vh;
+    grid-template-rows: 25vh auto 70vh 9vh;
     grid-template-areas: "Header " "h1  " "ol " "Footer ";
   }
   .marcas_grid header.container {
-    width: auto;
+    width: 100%;
   }
   .marcas_grid ul.navegación {
     justify-content: flex-end;

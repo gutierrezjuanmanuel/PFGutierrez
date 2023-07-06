@@ -27,6 +27,10 @@
     .container {
         width: auto;
     }
+    div:not(.contenedor_logo) {
+        width:auto;
+    }
+
 
 
 }
@@ -55,11 +59,6 @@ footer {
 
     grid-area: Footer;
     width:auto;
-
-    div:not(.contenedor_logo) {
-        width:auto;
-    }
-
 }
 
 @media screen and (min-width: 320px) {
@@ -114,7 +113,7 @@ footer {
     
         grid-template-columns: 100%;
 
-        grid-template-rows: 25vh 25vh 25vh 25vh;
+        grid-template-rows: 25vh auto 70vh 9vh;
 
         grid-template-areas: "Header "
 
@@ -125,7 +124,7 @@ footer {
         "Footer ";
 
         header.container {
-            width:auto;
+            width:100%;
         }
         ul.navegación{
         
@@ -152,6 +151,5 @@ footer {
             width: 100%;
 
         }
-
-
-    }}
+    }
+}
