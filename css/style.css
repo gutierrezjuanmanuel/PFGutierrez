@@ -672,8 +672,7 @@ footer {
     justify-content: flex-end;
   }
   .marcas_grid .contenedor_logo {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .marcas_grid .centrar_texto1 {
     font-size: 2rem;
