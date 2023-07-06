@@ -252,7 +252,7 @@ footer {
     width: fit-content;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 665px) {
   .contenedor_grid {
     display: grid;
     grid-template-columns: 100%;
@@ -338,8 +338,7 @@ footer {
     grid-template-areas: "Header " "h1  " "h2 " "Footer  ";
   }
   .acercade_grid header.container {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .acercade_grid ul.navegación {
     justify-content: flex-end;
@@ -430,8 +429,7 @@ footer {
     grid-template-areas: "Header " "Main  " "Footer  ";
   }
   .contactanos_grid header.container {
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
   }
   .contactanos_grid ul.navegación {
     justify-content: flex-end;
@@ -550,7 +548,7 @@ footer {
     width: fit-content;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 625px) {
   .instrumentos_grid {
     display: grid;
     grid-template-columns: 100%;
