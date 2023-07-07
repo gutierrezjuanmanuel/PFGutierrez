@@ -221,7 +221,7 @@ footer {
   width: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .contenedor_grid {
     display: grid;
     grid-template-columns: auto;
@@ -334,7 +334,7 @@ footer {
   width: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .acercade_grid {
     display: grid;
     grid-template-columns: auto;
@@ -425,7 +425,7 @@ footer {
   width: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .contactanos_grid {
     display: grid;
     grid-template-columns: auto;
@@ -543,7 +543,7 @@ footer {
   width: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .instrumentos_grid {
     display: grid;
     grid-template-columns: auto;
@@ -689,7 +689,7 @@ footer {
   width: auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   .marcas_grid {
     display: grid;
     grid-template-columns: fit-content;
