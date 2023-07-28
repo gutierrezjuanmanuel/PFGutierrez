@@ -693,7 +693,7 @@ footer {
   .marcas_grid {
     display: grid;
     grid-template-columns: fit-content;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto 454px auto;
     grid-template-areas: "Header " "h1  " "ol " "Footer  ";
   }
   .marcas_grid header.container {
