@@ -1,23 +1,20 @@
-const productos = [
-  { id: 1, nombre: "bateria", precio: 330.000 },
-  { id: 2, nombre: "guitarra", precio: 120.000 },
-  { id: 3, nombre: "violín", precio: 110.000 },
-  { id: 4, nombre: "bajo", precio: 170.000 },
-];
 
-class Productos {
-constructor(id, nombre, precio) {
-  this.id = id;
-  this.nombre = nombre;
-  this.precio = precio;
-}
+class Producto {
+  constructor(id, nombre, precio) {
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+  }
 }
 
+//arreglo que va a contener los productos creados
+  const productos = [];
 
-const productos1 = new Productos(5, "bombo", 50.000);
-const productos2 = new Productos(6, "flauta", 30.000);
-console.log(productos1.nombre);
-console.log(productos2.nombre);
+  //agregamos los productos creados por la clase Producto al arreglo
+productos.push(new Producto(1, "bateria", 330.000));
+productos.push(new Producto(1, "guitarra", 330.000));
+productos.push(new Producto(1, "violin", 330.000));
+productos.push(new Producto(1, "bajo", 330.000));
 
 let nombre = prompt("Ingrese el nombre del producto a  consultar.Para salir escriba ESC .");
 
