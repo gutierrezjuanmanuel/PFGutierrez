@@ -1,4 +1,3 @@
-
 class Producto {
   constructor(id, nombre, precio) {
     this.id = id;
@@ -7,38 +6,62 @@ class Producto {
   }
 }
 
+let contenedor = document.getElementById("contenedor");
+contenedor.className = "rojo";
 //arreglo que va a contener los productos creados
-  const productos = [];
+const productos = [];
 
-  //agregamos los productos creados por la clase Producto al arreglo
-productos.push(new Producto(1, "bateria", 330.000));
-productos.push(new Producto(1, "guitarra", 330.000));
-productos.push(new Producto(1, "violin", 330.000));
-productos.push(new Producto(1, "bajo", 330.000));
+//agregamos los productos creados por la clase Producto al arreglo
+productos.push(new Producto(1, "guitarra", 180000));
+productos.push(new Producto(2, "violin", 50000));
+productos.push(new Producto(3, "piano", 1111111));
+productos.push(new Producto(4, "saxofon", 1013526));
+productos.push(new Producto(5, "trompeta", 160000));
+productos.push(new Producto(6, "teclado", 60000));
 
-let nombre = prompt("Ingrese el nombre del producto a  consultar.Para salir escriba ESC .");
+const guardarStorage = (clave, valor) => {
+  localStorage.setItem(clave, valor);
+};
 
-while (nombre != "ESC") {
-  //declaramos la variable que contendrá el producto en caso de encontrarlo
-  let producto;
+productos.forEach((item) => {
+  guardarStorage(item.id, JSON.stringify(item));
+});
 
-  //recorremos el arreglo verificando si alguno de los productos cumple con el nombre
-  for (const item of productos) {
-    if (item.nombre === nombre) {
-      producto = item;
-    }
-  }
+localStorage.setItem("carrito", JSON.stringify(productos));
 
-  if (producto) {
-    let mensaje = `
-          Nombre: ${producto.nombre}
-          Precio: $${producto.precio}
-        `;
+//boton para eliminar el carrito
+let eliminar = document.getElementById("eliminar");
+let carrito = [];
 
-    alert(mensaje);
-  } else {
-    alert("El producto no se encuentra disponible");
-  }
+//me traigo el carrito del storage
+let carritoStorage = localStorage.getItem("carrito");
 
-  nombre = prompt("Ingrese el nombre del producto a  consultar");
+//si hay carrito lo cargo si no coloco en el dom que no hay productos
+if (carritoStorage) {
+  carrito = JSON.parse(carritoStorage);
+} else {
+  let div = document.createElement("div");
+  div.innerHTML = `
+    <h2>No hay productos en el carrito</h2>
+  `;
+
+  document.body.append(div);
 }
+
+//recorro el carrito y muestro en el dom los productos carrito
+carrito.forEach((item) => {
+  let div = document.createElement("div");
+  div.innerHTML = `
+    <h2>ID: ${item.id}</h2>
+    <p>Nombre: ${item.nombre}</p>
+    <b>$${item.precio}</b>
+  `;
+
+  document.body.append(div);
+});
+
+//elimino el storage, muestro el alert y recargo la pagina
+eliminar.addEventListener("click", () => {
+  localStorage.clear();
+  location.reload();
+});
