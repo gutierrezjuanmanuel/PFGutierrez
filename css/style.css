@@ -83,6 +83,7 @@ div:not(.contenedor_logo) {
   border: solid red 5px;
   width: -moz-fit-content;
   width: fit-content;
+  display:inline-block;
 }
 
 .contenedor_logo {
