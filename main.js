@@ -1,33 +1,33 @@
-class Producto {
-  constructor(id, nombre, precio) {
-    this.id = id;
-    this.nombre = nombre;
-    this.precio = precio;
-  }
-}
+//class Producto {
+//  constructor(id, nombre, precio) {
+//    this.id = id;
+//    this.nombre = nombre;
+//    this.precio = precio;
+//  }
+//}
 
-let contenedor = document.getElementById("contenedor");
-contenedor.className = "rojo";
+//let contenedor = document.getElementById("contenedor");
+//contenedor.className = "rojo";
 //arreglo que va a contener los productos creados
-const productos = [];
+//const productos = [];
 
 //agregamos los productos creados por la clase Producto al arreglo
-productos.push(new Producto(1, "guitarra", 180000));
-productos.push(new Producto(2, "violin", 50000));
-productos.push(new Producto(3, "piano", 1111111));
-productos.push(new Producto(4, "saxofon", 1013526));
-productos.push(new Producto(5, "trompeta", 160000));
-productos.push(new Producto(6, "teclado", 60000));
+//productos.push(new Producto(1, "guitarra", 180000));
+//productos.push(new Producto(2, "violin", 50000));
+//productos.push(new Producto(3, "piano", 1111111));
+//productos.push(new Producto(4, "saxofon", 1013526));
+//productos.push(new Producto(5, "trompeta", 160000));
+//productos.push(new Producto(6, "teclado", 60000));
 
-const guardarStorage = (clave, valor) => {
-  localStorage.setItem(clave, valor);
-};
+//const guardarStorage = (clave, valor) => {
+//localStorage.setItem(clave, valor);
+//};
 
-productos.forEach((item) => {
-  guardarStorage(item.id, JSON.stringify(item));
-});
+//productos.forEach((item) => {
+//guardarStorage(item.id, JSON.stringify(item));
+//});
 
-localStorage.setItem("carrito", JSON.stringify(productos));
+//localStorage.setItem("carrito", JSON.stringify(productos));
 
 //boton para eliminar el carrito
 let eliminar = document.getElementById("eliminar");
@@ -48,6 +48,8 @@ if (carritoStorage) {
   document.body.append(div);
 }
 
+
+
 //recorro el carrito y muestro en el dom los productos carrito
 carrito.forEach((item) => {
   let div = document.createElement("div");
@@ -64,4 +66,5 @@ carrito.forEach((item) => {
 eliminar.addEventListener("click", () => {
   localStorage.clear();
   location.reload();
+  alert("Carrito eliminado");
 });
