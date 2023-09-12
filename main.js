@@ -29,6 +29,7 @@
 
 //localStorage.setItem("carrito", JSON.stringify(productos));
 
+
 //boton para eliminar el carrito
 let eliminar = document.getElementById("eliminar");
 let carrito = [];
