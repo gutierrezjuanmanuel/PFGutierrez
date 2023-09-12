@@ -64,7 +64,25 @@ carrito.forEach((item) => {
 
 //elimino el storage, muestro el alert y recargo la pagina
 eliminar.addEventListener("click", () => {
-  localStorage.clear();
-  location.reload();
-  alert("Carrito eliminado");
+
+  Swal.fire({
+    title: "Está seguro de eliminar el carrito?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sí, seguro",
+    cancelButtonText: "No, no quiero",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      //codigo a ejecutar
+      Swal.fire({
+        title: "Borrado!",
+        icon: "success",
+        text: "El carrito ha sido borrado",
+      });
+    }
+  });
 });
+
+//localStorage.clear();
+//location.reload();
+//alert("Carrito eliminado");
