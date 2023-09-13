@@ -58,9 +58,11 @@ carrito.forEach((item) => {
     <h2>ID: ${item.id}</h2>
     <p>Nombre: ${item.nombre}</p>
     <b>$${item.precio}</b>
+    <button> agregar </button>
   `;
 
   document.body.append(div);
+
 });
 
 //elimino el storage, muestro el alert y recargo la pagina
