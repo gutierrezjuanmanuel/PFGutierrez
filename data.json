@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nombre": "guitarra",
+        "precio": 180000
+    },
+    {
+        "id": 2,
+        "nombre": "violin",
+        "precio": 500000
+    },
+    {
+        "id": 3,
+        "nombre": "piano",
+        "precio": 1111111
+    },
+    {
+        "id": 4,
+        "nombre": "saxofon",
+        "precio": 1013526
+    },
+    {
+        "id": 5,
+        "nombre": "trompeta",
+        "precio": 160000
+    },
+    {
+        "id": 6,
+        "nombre": "teclado",
+        "precio": 60000
+    }
+]
