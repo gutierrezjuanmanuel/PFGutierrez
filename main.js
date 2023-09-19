@@ -1,9 +1,9 @@
-class Producto {
-  constructor(id, nombre, precio) {
-    this.id = id;
-    this.nombre = nombre;
-    this.precio = precio;
-  }
+/*class Producto {
+constructor(id, nombre, precio) {
+this.id = id;
+this.nombre = nombre;
+this.precio = precio;
+}
 }
 
 let contenedor = document.getElementById("contenedor");
@@ -21,21 +21,37 @@ productos.push(new Producto(6, "teclado", 60000));
 
 
 const guardarStorage = (clave, valor) => {
-  localStorage.setItem(clave, valor);
+localStorage.setItem(clave, valor);
 };
 
 productos.forEach((item) => {
-  guardarStorage(item.id, JSON.stringify(item));
+guardarStorage(item.id, JSON.stringify(item));
 });
 
 localStorage.setItem("carrito", JSON.stringify(productos));
 
+*/
+
+/*
+const productos = [
+  { id: 1, nombre: "guitarra", precio: 180000 },
+  { id: 2, nombre: "violin", precio: 50000 },
+  { id: 3, nombre: "piano", precio: 1111111 },
+  { id: 4, nombre: "saxofon", precio: 1013526 },
+  { id: 5, nombre: "trompeta", precio: 160000 },
+  { id: 6, nombre: "teclado", precio: 60000 },
+];
+
+localStorage.setItem("carrito", JSON.stringify(productos));
+
+*/
 
 
 
 //boton para eliminar el carrito
 let eliminar = document.getElementById("eliminar");
 let carrito = [];
+
 
 //me traigo el carrito del storage
 let carritoStorage = localStorage.getItem("carrito");
@@ -50,7 +66,10 @@ if (carritoStorage) {
   `;
 
   document.body.append(div);
+  //const carrito = JSON.parse(carritoStorage) || await div(); 
 }
+
+
 
 const agregarCarrito = (id) => {
   let producto = productos.find((item) => item.id === id);
@@ -67,11 +86,11 @@ const agregarCarrito = (id) => {
 
 //recorro el carrito y muestro en el dom los productos carrito
 fetch("/data.json")
-.then((response) => response.json())
-.then((data) => {
-  data.forEach((item) => {
-  let div = document.createElement("div");
-  div.innerHTML = `
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((item) => {
+      let div = document.createElement("div");
+      div.innerHTML = `
   <div class="rojo">
      <h2>Id: ${item.id}</h2>
     <p>Nombre: ${item.nombre}</p>
@@ -80,12 +99,12 @@ fetch("/data.json")
     </div>
   `;
 
-  document.body.append(div);
-  let boton = document.getElementById(`boton${item.id}`);
-  boton.addEventListener("click", () => agregarCarrito(item.id));
+      document.body.append(div);
+      let boton = document.getElementById(`boton${item.id}`);
+      boton.addEventListener("click", () => agregarCarrito(item.id));
 
-});
-});
+    });
+  });
 
 
 
@@ -108,6 +127,8 @@ eliminar.addEventListener("click", () => {
       });
     }
   });
+  localStorage.clear();
+  location.reload();
 });
 
 //traemos el formulario
